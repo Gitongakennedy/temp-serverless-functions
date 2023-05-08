@@ -2,8 +2,10 @@ const items = [
   {
     id: 'recmg2a1ctaEJNZhu',
     name: 'utopia sofa',
-    image: 
-        'https://images.pexels.com/photos/13150279/pexels-photo-13150279.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load',
+    image: {url:'https://images.pexels.com/photos/13150279/pexels-photo-13150279.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load',
+
+    },
+        
     price: 39.95,
   },
   {
