@@ -10,7 +10,7 @@ try {
         src=${product.image.url}/> 
       <div class="info">
         <h5>${product.name}</h5>
-        <h5 class="price">$${product.price}</h5>
+        <h5 class="price">$${product.price}</h5> 
       </div>
     </article> `
  }).join('')
