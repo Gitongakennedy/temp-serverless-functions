@@ -6,11 +6,11 @@ try {
  const {data:{fields}}= await axios.get(`/api/3-product${id}`)
  console.log(fields)
  const {name,price,description}=fields
- const {image}=fields.image[0]
+ const {url}=fields.image[0]
  result.innerHTML= `<h1 class="title">${name}</h1>
   <article class="product">
     <img class="product-img"
-    src=${image}
+    src=${url}
     alt=${name}
     />
     <div class="product-info">
