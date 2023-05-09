@@ -1,12 +1,13 @@
 const result=document.querySelector('.result')
 
 const fetchData= async ()=>{
- console.log('Single Product page')
 try {
  const id=window.location.search 
  const {data:{fields}}= await axios.get(`/api/3-product${id}`)
- const {name,image,price,description}=fields
- return `<h1 class="title">Single Product</h1>
+ console.log(fields)
+ const {name,price,description}=fields
+ const {image}=fields.image[0]
+ result.innerHTML= `<h1 class="title">${name}</h1>
   <article class="product">
     <img class="product-img"
     src=${image}
